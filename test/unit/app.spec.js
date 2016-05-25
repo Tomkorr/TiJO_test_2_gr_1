@@ -11,7 +11,7 @@ describe('app', function ()
         });
         it('should reverse the number from "number string"', function () {
             expect(app.reverseNumber('3334433')).toBe('3344333');
-            expect(app.reverseNumber('1')).toBe('1);
+            expect(app.reverseNumber('1')).toBe('1');
         });
         it('should not return a string', function () {
             expect(app.reverseNumber(1234)).not.toBe('4321');
