@@ -15,7 +15,7 @@
                   templateUrl: 'brainCandyDetails.html',
                   controller: 'BrainCandyDetailsCtrl as candyDetails'
             });
-            $routeProvider.when ("/new", {
+            $routeProvider.when ('/new', {
                   templateUrl: 'brainCandyDetails.html',
                   controller: 'BrainCandyDetailsCtrl as candyDetails'
             });
@@ -23,7 +23,7 @@
                   redirectTo: '/'
             });
       });
-      ;
+      
 
       module.run (function ($httpBackend)
       {
@@ -32,7 +32,7 @@
             [
                   {
                         id: sequence++,
-                        name: "Krowka",
+                        name: 'Krowka',
                         factory: 'Wawel'
                   },
                   {
@@ -42,7 +42,7 @@
                   },
                   {
                         id: sequence++,
-                        name: "Michalki",
+                        name: 'Michalki',
                         factory: 'Wawel'
                   }
             ].every (function (value)
@@ -66,7 +66,7 @@
                   }
                   return [404];
             });
-            $httpBackend.whenGET ("/api/candy").respond (function ()
+            $httpBackend.whenGET ('/api/candy').respond (function ()
             {
                   return [200, candies];
             });
@@ -95,7 +95,7 @@
                         return [200];
                   }
                   return [404];
-            })
+            });
 
             $httpBackend.whenGET (/.*\.html/).passThrough ();
 
