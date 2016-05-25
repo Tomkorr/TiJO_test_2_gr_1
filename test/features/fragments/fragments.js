@@ -27,9 +27,9 @@ var fragments = function (text)
     'use strict';
 
     var mapping = {
-        helloButton: element,
-        niceToMeetYouButton: element,
-        someBigText: element,
+        TomekButton: element,
+        KorusButton: element,
+        testowanieText: element,
         learnMoreHref: element
     };
 
